@@ -64,3 +64,5 @@ If the link does not appear in the terminal after running the run.py file, the a
 ***
 
 #The project is not completed yet. Unittests and containerization remaining.
+
+####splendorous-churros-9b4b6b.netlify.app
