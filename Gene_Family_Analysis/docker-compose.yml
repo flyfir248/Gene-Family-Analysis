@@ -1,0 +1,8 @@
+version: "3.10"
+services:
+  GFApackage:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - FLASK_PORT = 5001

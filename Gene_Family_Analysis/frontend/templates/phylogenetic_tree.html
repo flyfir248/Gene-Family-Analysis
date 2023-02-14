@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block title %}{{title}}{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block page %}{{title}}{% endblock %}
+{% block heading %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+
+  <h4>Phylogenetic tree</h4>
+  <br>
+    <img src="{{url_for('static', filename='result.jpg')}}">
+     <br>
+    {{ buttons |safe }}
+    <br>
+    {{ fin_text |safe }}
+{% endblock %}
+{% block footer %}
+{{super()}}
+{% endblock %}
+

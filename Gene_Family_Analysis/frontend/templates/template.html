@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+{% block title %}{{title}}{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block page %}{{title}}{% endblock %}
+{% block heading %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+
+  <h4>Submit the name of the gene</h4>
+  <br>
+  
+  <form method="POST" action="/info">
+    <textarea name="textbox"></textarea>
+    <button type="submit" name="submit" id="but">Submit</button>
+    <p>The analysis will take some time. Please wait....</p>
+  </form>
+    {{ data |safe }}
+    <br>
+    {{ button |safe }}
+    <br>
+    {{ sequences |safe}}
+    <br>
+    <br>
+    {{ mat |safe }}
+    <br>
+    <br>
+    {{ t |safe }}
+    <br>
+
+    <br>
+    {{ tr |safe }}
+    <br>
+    {{ buttons |safe }}
+    <br>
+    {{ fin_text |safe }}
+  
+  <br>
+  
+{% endblock %}
+{% block footer %}
+{{super()}}
+{% endblock %}
+
